@@ -1,0 +1,10 @@
+{
+    "shopingCart": "#cart_contents_container",
+    "checkoutBtn": "[data-test=checkout]",
+    "nameTxtField": "[data-test=firstName]",
+    "lastNameTxtField": "[data-test=lastName]",
+    "zipTxtField": "[data-test=postalCode]",
+    "continueBtn": "[data-test=continue]",
+    "checkoutSummary": "#checkout_summary_container",
+    "finishBtn": "[data-test=finish]"
+}    

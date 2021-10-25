@@ -1,0 +1,4 @@
+{
+    "burgerMenu": "#react-burger-menu-btn",
+    "logoutBtn": "#logout_sidebar_link"
+}

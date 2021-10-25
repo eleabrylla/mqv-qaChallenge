@@ -1,0 +1,16 @@
+{
+    "sortContainer": "[data-test=product_sort_container]",
+    "firstItemName": ".inventory_list > :nth-child(1)",
+    "secondItemName": ".inventory_list > :nth-child(2)",
+    "thirdItemName": ".inventory_list > :nth-child(3)",
+    "fourthItemName": ".inventory_list > :nth-child(4)",
+    "fifthItemName": ".inventory_list > :nth-child(5)",
+    "sixthItemName": ".inventory_list > :nth-child(6)",
+    "onesieAdd": "[data-test=add-to-cart-sauce-labs-onesie]",
+    "lightAdd": "[data-test=add-to-cart-sauce-labs-bike-light]",
+    "shirtAdd": "[data-test=add-to-cart-sauce-labs-bolt-t-shirt]",
+    "redShirtAdd": "[data-test='add-to-cart-test.allthethings()-t-shirt-(red)']",
+    "backpackAdd": "[data-test=add-to-cart-sauce-labs-backpack]",
+    "jacketAdd": "[data-test=add-to-cart-sauce-labs-fleece-jacket]",
+    "cartBtn": ".shopping_cart_link"
+}

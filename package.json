@@ -1,0 +1,24 @@
+{
+  "name": "marianaqv-qaautomationbootcamp",
+  "version": "1.0.0",
+  "description": "QA Automation bootcamp challenge Wizeline",
+  "main": "index.js",
+  "scripts": {
+    "cy:run:chrome": "./node_modules/.bin/cypress run --browser chrome",
+    "cy:run:firefox": "./node_modules/.bin/cypress run --browser firefox",
+    "cy:run:edge": "./node_modules/.bin/cypress run --browser edge",
+    "test": "./node_modules/.bin/cypress open"
+  },
+  "keywords": [
+    "qa",
+    "challenge",
+    "wizeline",
+    "automation"
+  ],
+  "author": "Mariana Quezada",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^8.6.0",
+    "cypress-xpath": "^1.6.2"
+  }
+}

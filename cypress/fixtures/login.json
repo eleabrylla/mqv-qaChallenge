@@ -1,0 +1,6 @@
+{
+    "usernameBox" : "[data-test=username]",
+    "pswBox" : "[data-test=password]",
+    "loginButton" : "[data-test=login-button]",
+    "invalidUsrMsg" : "[data-test=error]"
+}
