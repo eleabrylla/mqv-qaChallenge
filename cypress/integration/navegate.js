@@ -8,6 +8,7 @@ describe("Navegate", ()=>{
     //Sort products by Price (low to high)
     it('Sort products by Price (low to high)', ()=>{
         cy.login("standard_user","secret_sauce");
+        cy.url().should('eq', 'https://www.saucedemo.com/inventory.html');
         cy.fixture('inventory').then((inventory)=>{
             cy.get(inventory.sortContainer).select('Price (low to high)');
             cy.get(inventory.firstItemName).contains('Sauce Labs Onesie');
@@ -22,6 +23,7 @@ describe("Navegate", ()=>{
     //Add multiple items to the shopping cart
     it('Add multiple items to the shopping cart', ()=>{
         cy.login("standard_user","secret_sauce");
+        cy.url().should('eq', 'https://www.saucedemo.com/inventory.html');
         cy.fixture('inventory').then((inventory)=>{
             cy.get(inventory.onesieAdd).click();
             cy.get(inventory.lightAdd).click();
@@ -31,6 +33,7 @@ describe("Navegate", ()=>{
             cy.get(inventory.jacketAdd).click();
             cy.get(inventory.cartBtn).click();
         })   
+        cy.url().should('eq', 'https://www.saucedemo.com/cart.html');
         cy.fixture('shopingCart').then((shopingCart)=>{
             cy.get(shopingCart.shopingCart).contains("Sauce Labs Onesie");
             cy.get(shopingCart.shopingCart).contains("Sauce Labs Bike Light");
@@ -44,10 +47,12 @@ describe("Navegate", ()=>{
     //Add the specific product ‘Sauce Labs Onesie’ to the shopping cart
     it('Add the specific product ‘Sauce Labs Onesie’ to the shopping cart', ()=>{
         cy.login("standard_user","secret_sauce");
+        cy.url().should('eq', 'https://www.saucedemo.com/inventory.html');
         cy.fixture('inventory').then((inventory)=>{
             cy.get(inventory.onesieAdd).click();
             cy.get(inventory.cartBtn).click();
         })   
+        cy.url().should('eq', 'https://www.saucedemo.com/cart.html');
         cy.fixture('shopingCart').then((shopingCart)=>{
             cy.get(shopingCart.shopingCart).contains("Sauce Labs Onesie");
         }) 
@@ -56,10 +61,12 @@ describe("Navegate", ()=>{
     //Complete a purchase
     it('Add the specific product ‘Sauce Labs Onesie’ to the shopping cart', ()=>{
         cy.login("standard_user","secret_sauce");
+        cy.url().should('eq', 'https://www.saucedemo.com/inventory.html');
         cy.fixture('inventory').then((inventory)=>{
             cy.get(inventory.shirtAdd).click();
             cy.get(inventory.cartBtn).click();
         })   
+        cy.url().should('eq', 'https://www.saucedemo.com/cart.html');
         cy.fixture('shopingCart').then((shopingCart)=>{
             cy.get(shopingCart.shopingCart).contains("Sauce Labs Bolt T-Shirt");
             cy.get(shopingCart.checkoutBtn).click();
