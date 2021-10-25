@@ -15,4 +15,4 @@ How to run it?
 Browsers supported: Chrome-family browsers (including Electron and Chromium-based Microsoft Edge), and Firefox.
 
 Note:
-The project is not organized using Page Object Model (POM) since Cypress recomends using  App Actions.
+The project is not organized using Page Object Model (POM) since Cypress recommends using  App Actions.
